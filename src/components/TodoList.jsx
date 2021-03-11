@@ -14,20 +14,20 @@ const TodoListStyled = styled.div`
 const TodoList = ({ taskList, changeState, deleteTask, filter }) => {
   return (
     <TodoListStyled>
-      {taskList?React.map((task) => {
+      {taskList?.map((task) => {
         return (
           (filter === 'all' ||
-          (filter === 'completed' && task.completed) ||
-          (filter === 'active' && !task.completed)) && (
-          <Task
-            task={task}
-            key={task.id}
-            changeState={changeState}
-            deleteTask={deleteTask}
-          />  
-        )
-      );
-    })}
+            (filter === 'completed' && task.completed) ||
+            (filter === 'active' && !task.completed)) && (
+            <Task
+              task={task}
+              key={task.id}
+              changeState={changeState}
+              deleteTask={deleteTask}
+            />
+          )
+        );
+      })}
     </TodoListStyled>
   );
 };
