@@ -5,7 +5,7 @@ import Form from './components/Form';
 import Menu from './components/Menu';
 import TodoList from './components/TodoList';
 import Wrapper from './components/Wrapper';
-import localSt from './storage/';
+import localSt from './storage/config';
 
 const GlobalStyled = createGlobalStyle`
   *{
