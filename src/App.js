@@ -5,7 +5,7 @@ import Form from './components/Form';
 import Menu from './components/Menu';
 import TodoList from './components/TodoList';
 import Wrapper from './components/Wrapper';
-import localSt from './storage/config';
+import localSt from './storage/';
 
 const GlobalStyled = createGlobalStyle`
   *{
@@ -26,8 +26,8 @@ const GlobalStyled = createGlobalStyle`
 `;
 
 const initialTaskList = [
-  { id: 1, title: 'Empezar curso de React', completed: false },
-  { id: 2, title: 'Configurar Alexa', completed: true },
+  { id: 1, title: 'Try Styled Components', completed: false },
+  { id: 2, title: 'Fix typos', completed: true },
 ];
 
 function App() {
